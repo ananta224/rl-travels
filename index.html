@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ── Meta ──────────────────────────────────────────────── -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="R L Travels – Comfortable & Affordable Travel Services from Bhadrak, Odisha. Temple tours, pilgrimages, weddings & corporate trips. Book now on WhatsApp.">
+  <meta name="keywords"
+    content="travel Bhadrak, Odisha travel, tempo traveller Bhadrak, Puri Jagannath tour, Rath Yatra trip, pilgrimage Odisha">
+  <meta name="author" content="R L Travels">
+  <meta name="theme-color" content="#1A1209">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="R L Travels – Travel Services from Bhadrak, Odisha">
+  <meta property="og:description" content="Comfortable & Affordable Travel Services from Bhadrak. Temple tours, pilgrimages, weddings and more.">
+  <meta property="og:image"       content="assets/images/icons/og-image.jpg">
+  <meta property="og:url"         content="https://rltravels.in">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="R L Travels – Bhadrak, Odisha">
+  <meta name="twitter:description" content="Comfortable & Affordable Travel Services from Bhadrak, Odisha.">
+  <meta name="twitter:image"       content="assets/images/icons/og-image.jpg">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RL Travels">
+
+  <title>R L Travels – Comfortable & Affordable Travel Services from Bhadrak</title>
+
+  <!-- ── Preconnect / Fonts ─────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- ── Stylesheets (load order matters) ──────────────────── -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!-- Favicons -->
+  <link rel="icon"             type="image/x-icon" href="assets/images/icons/favicon.ico">
+  <link rel="icon"             type="image/png"    sizes="32x32" href="assets/images/icons/favicon-32.png">
+  <link rel="icon"             type="image/png"    sizes="16x16" href="assets/images/icons/favicon-16.png">
+  <link rel="apple-touch-icon"                     href="assets/images/icons/apple-touch.png">
+  <!-- Fallback emoji favicon if icon files are missing -->
+  <link rel="icon" id="emoji-favicon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚐</text></svg>">
+
+  <!-- ── Structured Data (SEO) ─────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "R L Travels",
+    "description": "Comfortable & Affordable Travel Services from Bhadrak, Odisha.",
+    "url": "https://rltravels.in",
+    "telephone": "+919238514756",
+    "email": "rltravels@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bhadrak",
+      "addressRegion": "Odisha",
+      "addressCountry": "IN"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "500"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVIGATION
+  ═════════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <div class="nav__inner">
+
+        <!-- Logo -->
+        <a href="#home" class="nav__logo" aria-label="R L Travels – Home">R L Travels</a>
+
+        <!-- Desktop links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#services"      class="nav__link" data-section="services">Services</a></li>
+          <li><a href="#pricing"       class="nav__link" data-section="pricing">Pricing</a></li>
+          <li><a href="#gallery"       class="nav__link" data-section="gallery">Gallery</a></li>
+          <li><a href="#testimonials"  class="nav__link" data-section="testimonials">Reviews</a></li>
+          <li><a href="#contact"       class="nav__link" data-section="contact">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <a href="tel:+919238514756" class="btn btn--primary btn--sm nav__cta-desktop">
+          📞 Call Now
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button class="nav__hamburger" id="nav-hamburger"
+          aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="nav__drawer" id="nav-drawer" role="dialog" aria-label="Mobile navigation">
+      <nav class="nav__drawer-links">
+        <a href="#services"     class="nav__drawer-link">Services</a>
+        <a href="#pricing"      class="nav__drawer-link">Pricing</a>
+        <a href="#gallery"      class="nav__drawer-link">Gallery</a>
+        <a href="#testimonials" class="nav__drawer-link">Reviews</a>
+        <a href="#contact"      class="nav__drawer-link">Contact</a>
+      </nav>
+      <div style="display:flex; gap:12px;">
+        <a href="https://wa.me/919238514756" class="btn btn--secondary btn--full" target="_blank" rel="noopener">
+          💬 WhatsApp
+        </a>
+        <a href="tel:+919238514756" class="btn btn--primary btn--full">
+          📞 Call
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO
+  ═════════════════════════════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Hero">
+
+    <!-- Background image -->
+    <div class="hero__bg" aria-hidden="true">
+      <img
+        src="assets/images/hero/hero-bg.jpg"
+        alt=""
+        loading="eager"
+        fetchpriority="high"
+        width="1800"
+        height="1200"
+        onerror="this.src='https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1800&q=80'">
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__fade-bottom" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="hero__content">
+      <div class="hero__text">
+        <div class="hero__eyebrow" aria-hidden="true">✈ Trusted Since 2010 &nbsp;·&nbsp; Bhadrak, Odisha</div>
+
+        <h1 class="hero__title">
+          R L <em>Travels</em>
+        </h1>
+
+        <p class="hero__body">
+          Comfortable &amp; Affordable Travel Services from Bhadrak.
+          Your trusted partner for temple tours, pilgrimages, weddings
+          and special events across Odisha.
+        </p>
+
+        <div class="hero__actions">
+          <a href="https://wa.me/919238514756?text=Hi%2C%20I%20would%20like%20to%20book%20a%20vehicle."
+            class="btn btn--secondary btn--lg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Book on WhatsApp">
+            💬 Book on WhatsApp
+          </a>
+          <a href="tel:+919238514756"
+            class="btn btn--ghost btn--lg"
+            aria-label="Call us at +91 9238514756">
+            📞 +91 92385 14756
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats panel -->
+      <aside class="hero__stats" aria-label="Company highlights">
+        <div class="hero__stat">
+          <div class="hero__stat-number" aria-label="500 plus happy customers">500+</div>
+          <div class="hero__stat-label">Happy Customers</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number" aria-label="10 plus years experience">10+</div>
+          <div class="hero__stat-label">Years Experience</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number">24/7</div>
+          <div class="hero__stat-label">Service Available</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       DESTINATIONS STRIP
+  ═════════════════════════════════════════════════════════ -->
+  <div class="destinations reveal" aria-label="Popular destinations">
+    <div class="container">
+      <div class="destinations__inner">
+        <span class="destinations__label">Popular Destinations</span>
+        <div class="destinations__pills" role="list">
+          <span class="destinations__pill" role="listitem">Puri Jagannath</span>
+          <span class="destinations__pill" role="listitem">Konark Temple</span>
+          <span class="destinations__pill" role="listitem">Bhubaneswar</span>
+          <span class="destinations__pill" role="listitem">Chilika Lake</span>
+          <span class="destinations__pill" role="listitem">Digha Beach</span>
+          <span class="destinations__pill" role="listitem">Simlipal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       SERVICES
+  ═════════════════════════════════════════════════════════ -->
+  <section class="services section" id="services" aria-labelledby="services-title">
+    <div class="container">
+
+      <header class="section-header section-header--center reveal">
+        <p class="section-eyebrow" aria-hidden="true">What We Offer</p>
+        <h2 class="section-title" id="services-title">Our Services</h2>
+        <p class="section-lead section-lead--center">
+          Comprehensive travel solutions for all your transportation needs
+          across Odisha and beyond.
+        </p>
+      </header>
+
+      <div class="services__grid" role="list">
+
+        <article class="service-card card reveal" role="listitem" data-delay="1">
+          <div class="service-card__icon" aria-hidden="true">🛕</div>
+          <h3 class="service-card__title">Temple &amp; Tourist Trips</h3>
+          <p class="service-card__body">
+            Comfortable travel to Puri Jagannath, Konark Sun Temple, Bhubaneswar temples,
+            Chilika Lake, Digha Beach, and Simlipal National Park.
+          </p>
+        </article>
+
+        <article class="service-card card reveal" role="listitem" data-delay="2">
+          <div class="service-card__icon" aria-hidden="true">💒</div>
+          <h3 class="service-card__title">Wedding &amp; Event Transport</h3>
+          <p class="service-card__body">
+            Reliable group transportation for weddings, receptions, and special events
+            with well-maintained vehicles and professional drivers.
+          </p>
+        </article>
+
+        <article class="service-card card reveal" role="listitem" data-delay="3">
+          <div class="service-card__icon" aria-hidden="true">🙏</div>
+          <h3 class="service-card__title">Pilgrimage Special Trips</h3>
+          <p class="service-card__body">
+            Special packages for Rath Yatra, Tara Tarini, Akhandalmani, and other
+            religious destinations with experienced drivers.
+          </p>
+        </article>
+
+        <article class="service-card card reveal" role="listitem" data-delay="4">
+          <div class="service-card__icon" aria-hidden="true">🏢</div>
+          <h3 class="service-card__title">Corporate &amp; Group Tours</h3>
+          <p class="service-card__body">
+            Professional transportation for corporate outings, educational trips,
+            and group excursions anywhere across Odisha.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       PRICING
+  ═════════════════════════════════════════════════════════ -->
+  <section class="pricing section" id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <p class="section-eyebrow" aria-hidden="true">Transparent Pricing</p>
+        <h2 class="section-title section-title--inverse" id="pricing-title">
+          Choose Your Vehicle
+        </h2>
+        <p class="section-lead section-lead--inverse">
+          No hidden charges. Flexible booking options.
+          All prices inclusive of driver charges.
+        </p>
+      </header>
+
+      <div class="pricing__grid">
+
+        <!-- Tempo Traveller – Featured -->
+        <article class="price-card price-card--featured reveal" data-delay="1" aria-label="Tempo Traveller pricing">
+          <div class="price-card__badge">
+            <span class="badge badge--gold">⭐ Most Popular</span>
+          </div>
+          <p class="price-card__vehicle-type">17 Seater AC</p>
+          <h3 class="price-card__name">Tempo Traveller</h3>
+          <p class="price-card__tagline">Best for Group Travel</p>
+          <div class="price-card__amount" aria-label="Price: 30 rupees per km">
+            <span class="price-card__currency" aria-hidden="true">₹</span>
+            <span class="price-card__number" aria-hidden="true">30</span>
+            <span class="price-card__unit" aria-hidden="true">/ per km</span>
+          </div>
+          <ul class="price-card__features" aria-label="Included features">
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Air Conditioner
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              17 Comfortable Seats
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Professional Driver
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Spacious Luggage Area
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Best for Group Travel
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--white btn--full">Book Tempo Traveller</a>
+        </article>
+
+        <!-- Bolero -->
+        <article class="price-card reveal" data-delay="2" aria-label="Bolero pricing">
+          <p class="price-card__vehicle-type">SUV · 7–8 Seater</p>
+          <h3 class="price-card__name">Bolero</h3>
+          <p class="price-card__tagline">Rugged &amp; Reliable</p>
+          <div class="price-card__amount" aria-label="Price: 18 rupees per km">
+            <span class="price-card__currency" aria-hidden="true">₹</span>
+            <span class="price-card__number" aria-hidden="true">18</span>
+            <span class="price-card__unit" aria-hidden="true">/ per km</span>
+          </div>
+          <ul class="price-card__features" aria-label="Included features">
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Rugged &amp; Reliable
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              7–8 Seater
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Experienced Driver
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Good for All Terrain
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Family Friendly
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full">Book Bolero</a>
+        </article>
+
+        <!-- Sedan -->
+        <article class="price-card reveal" data-delay="3" aria-label="Sedan Car pricing">
+          <p class="price-card__vehicle-type">Comfortable Ride</p>
+          <h3 class="price-card__name">Sedan Car</h3>
+          <p class="price-card__tagline">Perfect for Small Groups</p>
+          <div class="price-card__amount" aria-label="Price: 15 rupees per km">
+            <span class="price-card__currency" aria-hidden="true">₹</span>
+            <span class="price-card__number" aria-hidden="true">15</span>
+            <span class="price-card__unit" aria-hidden="true">/ per km</span>
+          </div>
+          <ul class="price-card__features" aria-label="Included features">
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              AC Available
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              4–5 Seater
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Smooth Drive
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Fuel Efficient
+            </li>
+            <li class="price-card__feature">
+              <span class="price-card__feature-icon" aria-hidden="true">✓</span>
+              Perfect for Small Groups
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full">Book Sedan Car</a>
+        </article>
+
+      </div>
+
+      <p class="pricing__note reveal">
+        All prices inclusive of driver charges &nbsp;·&nbsp;
+        Fuel extra as per actual &nbsp;·&nbsp;
+        📞 Call for custom &amp; long-distance packages
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       SPECIAL OFFER BANNER
+  ═════════════════════════════════════════════════════════ -->
+  <div class="offer" aria-label="Special offer">
+    <div class="container">
+      <div class="offer__banner reveal">
+        <div>
+          <span class="badge badge--danger">🎉 Limited Time Offer</span>
+          <h2 class="offer__title">Special Rath Yatra Offer!</h2>
+          <p class="offer__percent" aria-label="10 percent off">10% OFF</p>
+          <p class="offer__body">
+            Book your pilgrimage trip for Rath Yatra and get 10% discount
+            on all vehicle bookings. Use the promo code at enquiry.
+          </p>
+        </div>
+        <div class="offer__promo">
+          <p class="offer__promo-label">Promo Code</p>
+          <p class="offer__promo-code" id="promo-code" role="button"
+            tabindex="0" aria-label="Click to copy promo code YATRA10">YATRA10</p>
+          <p class="offer__promo-validity">Valid till June 2025</p>
+          <p class="offer__copy-hint" id="copy-hint">Click to copy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       GALLERY
+  ═════════════════════════════════════════════════════════ -->
+  <section class="gallery section" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+
+      <header class="section-header section-header--center reveal">
+        <p class="section-eyebrow" aria-hidden="true">Travel Gallery</p>
+        <h2 class="section-title" id="gallery-title">Beautiful Odisha Awaits</h2>
+      </header>
+
+      <div class="gallery__grid">
+        <div class="gallery__item reveal">
+          <img src="assets/images/gallery/gallery-1.jpg"
+            alt="Jagannath Temple Puri" loading="lazy" width="700" height="900"
+            onerror="this.src='https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=700&q=80'">
+        </div>
+        <div class="gallery__item reveal" data-delay="1">
+          <img src="assets/images/gallery/gallery-2.jpg"
+            alt="Scenic landscape of Odisha" loading="lazy" width="600" height="400"
+            onerror="this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80'">
+        </div>
+        <div class="gallery__item reveal" data-delay="2">
+          <img src="assets/images/gallery/gallery-3.jpg"
+            alt="Chilika Lake Odisha" loading="lazy" width="600" height="400"
+            onerror="this.src='https://images.unsplash.com/photo-1524399776393-c4af65778d4a?w=600&q=80'">
+        </div>
+        <div class="gallery__item reveal" data-delay="3">
+          <img src="assets/images/gallery/gallery-4.jpg"
+            alt="Odisha temple architecture" loading="lazy" width="600" height="400"
+            onerror="this.src='https://images.unsplash.com/photo-1625466862832-1d9a4e2c52b8?w=600&q=80'">
+        </div>
+        <div class="gallery__item reveal" data-delay="1">
+          <img src="assets/images/gallery/gallery-5.jpg"
+            alt="Travel journey Odisha" loading="lazy" width="600" height="400"
+            onerror="this.src='https://images.unsplash.com/photo-1606298855672-3efb63017be8?w=600&q=80'">
+        </div>
+        <div class="gallery__item reveal" data-delay="2">
+          <img src="assets/images/gallery/gallery-6.jpg"
+            alt="Natural beauty Odisha" loading="lazy" width="600" height="400"
+            onerror="this.src='https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80'">
+        </div>
+        <div class="gallery__item reveal" data-delay="3">
+          <img src="assets/images/gallery/gallery-7.jpg"
+            alt="Temple tour vehicle" loading="lazy" width="600" height="400"
+            onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       TESTIMONIALS
+  ═════════════════════════════════════════════════════════ -->
+  <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+
+      <header class="section-header section-header--center reveal">
+        <p class="section-eyebrow" aria-hidden="true">Customer Reviews</p>
+        <h2 class="section-title" id="testimonials-title">What Our Customers Say</h2>
+        <p class="section-lead section-lead--center">
+          Real experiences from our valued customers across Odisha.
+        </p>
+      </header>
+
+      <div class="testimonials__grid">
+
+        <article class="testi-card card reveal" data-delay="1" aria-label="Review by Rajesh Kumar">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testi-card__body">
+            "Booked a car for our family trip to Puri and Konark. The vehicle was clean,
+            comfortable, and the driver was very professional. Highly recommended for temple tours!"
+          </blockquote>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" aria-hidden="true">R</div>
+            <div>
+              <p class="testi-card__name">Rajesh Kumar</p>
+              <p class="testi-card__meta">Bhubaneswar, Odisha &nbsp;·&nbsp; November 2024</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card card reveal" data-delay="2" aria-label="Review by Priya Patel">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testi-card__body">
+            "We hired vehicles for our wedding transportation. The service was punctual and reliable.
+            Great experience with RL Travels. Will definitely use again for future events!"
+          </blockquote>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" aria-hidden="true">P</div>
+            <div>
+              <p class="testi-card__name">Priya Patel</p>
+              <p class="testi-card__meta">Cuttack, Odisha &nbsp;·&nbsp; September 2024</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card card reveal" data-delay="3" aria-label="Review by Amit Sahoo">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testi-card__body">
+            "Booked a cab for Rath Yatra trip. Comfortable journey, affordable pricing,
+            and excellent customer service. RL Travels made our pilgrimage truly memorable!"
+          </blockquote>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" aria-hidden="true">A</div>
+            <div>
+              <p class="testi-card__name">Amit Sahoo</p>
+              <p class="testi-card__meta">Balasore, Odisha &nbsp;·&nbsp; July 2024</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center;">
+        <div class="testimonials__rating reveal">
+          <span class="testimonials__rating-star" aria-hidden="true">★</span>
+          <strong>4.9/5.0</strong> Average Rating from 500+ Happy Customers
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       CONTACT
+  ═════════════════════════════════════════════════════════ -->
+  <section class="contact section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Left: Info -->
+        <div class="contact__info reveal">
+          <p class="section-eyebrow" aria-hidden="true">Get In Touch</p>
+          <h2 class="contact__info-title section-title" id="contact-title">
+            Ready to Plan Your <em>Journey?</em>
+          </h2>
+          <p class="contact__info-body">
+            Contact us today and let's plan your perfect journey.
+            We'll get back to you within 3 hours during business hours.
+          </p>
+
+          <address class="contact__items" style="font-style:normal;">
+
+            <div class="contact-item">
+              <div class="contact-item__icon" aria-hidden="true">📞</div>
+              <div>
+                <p class="contact-item__title">Phone</p>
+                <p class="contact-item__value">
+                  <a href="tel:+919238514756">+91-9238514756</a>
+                  <span class="contact-item__sub">Available 24/7 for bookings</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon" aria-hidden="true">💬</div>
+              <div>
+                <p class="contact-item__title">WhatsApp</p>
+                <p class="contact-item__value">
+                  <a href="https://wa.me/919238514756" target="_blank" rel="noopener">
+                    +91-9238514756
+                  </a>
+                  <span class="contact-item__sub">Quick booking &amp; instant replies</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon" aria-hidden="true">✉️</div>
+              <div>
+                <p class="contact-item__title">Email</p>
+                <p class="contact-item__value">
+                  <a href="mailto:rltravels@gmail.com">rltravels@gmail.com</a>
+                  <span class="contact-item__sub">For detailed enquiries</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon" aria-hidden="true">📍</div>
+              <div>
+                <p class="contact-item__title">Location</p>
+                <p class="contact-item__value">
+                  Bhadrak, Odisha, India
+                  <span class="contact-item__sub">Serving all of Odisha</span>
+                </p>
+              </div>
+            </div>
+
+          </address>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact__form-card reveal" data-delay="1">
+          <h3 class="contact__form-title">Send Us an Enquiry</h3>
+
+          <!--
+            GOOGLE SHEETS SETUP:
+            1. Follow instructions in google-apps-script/Code.gs
+            2. Deploy your Apps Script and copy the Web App URL
+            3. Paste it into the data-sheet-url attribute below
+          -->
+          <form id="enquiry-form" novalidate aria-label="Enquiry form"
+            data-sheet-url="https://script.google.com/macros/s/AKfycbwHP1DDwiLfSUd_JGdLKndZDNUGHx9bENO_5RliJuT7MuDl9y8vS5M8uR1oYiU7jVnaMg/exec">
+            <div class="contact__form-grid">
+
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name <span aria-hidden="true" style="color:var(--clr-accent)">*</span></label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="Enter your full name"
+                  required
+                  data-validate="name"
+                  aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number <span aria-hidden="true" style="color:var(--clr-accent)">*</span></label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="Enter your 10-digit mobile number"
+                  required
+                  data-validate="phone"
+                  aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="travel-date">Preferred Travel Date</label>
+                <input
+                  class="form-control"
+                  type="date"
+                  id="travel-date"
+                  name="travelDate"
+                  min="">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="vehicle">Vehicle Type</label>
+                <select class="form-control" id="vehicle" name="vehicle">
+                  <option value="">— Select a vehicle —</option>
+                  <option value="Tempo Traveller (17 Seater AC)">Tempo Traveller (17 Seater AC) – ₹30/km</option>
+                  <option value="Bolero (SUV 7-8 Seater)">Bolero (SUV 7–8 Seater) – ₹18/km</option>
+                  <option value="Sedan Car (4-5 Seater)">Sedan Car (4–5 Seater) – ₹15/km</option>
+                  <option value="Not sure yet">Not sure yet – Need recommendation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Message <span aria-hidden="true" style="color:var(--clr-accent)">*</span></label>
+                <textarea
+                  class="form-control form-control--textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Tell us your travel destination, number of passengers, and any special requirements…"
+                  required
+                  data-validate="message"
+                  aria-required="true"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full btn--lg">
+                Send Enquiry →
+              </button>
+
+              <p class="contact__form-note">
+                ✅ Enquiries are saved instantly to our records.<br>
+                We'll call you back within 3 hours during business hours.
+              </p>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+  ═════════════════════════════════════════════════════════ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo" aria-label="R L Travels home">R L Travels</a>
+          <p class="footer__brand-body">
+            Your trusted travel partner in Bhadrak, Odisha. We provide comfortable,
+            safe, and affordable transportation for temple tours, pilgrimages,
+            weddings, and special events.
+          </p>
+          <nav class="footer__socials" aria-label="Social media links">
+            <a class="footer__social" href="#" aria-label="Facebook" rel="noopener">📘</a>
+            <a class="footer__social" href="https://wa.me/919238514756" aria-label="WhatsApp" rel="noopener" target="_blank">💬</a>
+            <a class="footer__social" href="#" aria-label="Instagram" rel="noopener">📸</a>
+            <a class="footer__social" href="#" aria-label="YouTube" rel="noopener">▶️</a>
+          </nav>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="#home"         class="footer__link">Home</a>
+            <a href="#services"     class="footer__link">Services</a>
+            <a href="#pricing"      class="footer__link">Pricing</a>
+            <a href="#gallery"      class="footer__link">Gallery</a>
+            <a href="#testimonials" class="footer__link">Reviews</a>
+            <a href="#contact"      class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Contact Us</h3>
+          <address style="font-style:normal;">
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">📞</span>
+              <a href="tel:+919238514756" class="footer__link">+91-9238514756</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">✉️</span>
+              <a href="mailto:rltravels@gmail.com" class="footer__link">rltravels@gmail.com</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">📍</span>
+              <span>Bhadrak, Odisha, India</span>
+            </div>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year></span> R L Travels. All rights reserved.</span>
+        <span>Made with ❤️ in Bhadrak, Odisha</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ── Toast notification ──────────────────────────────── -->
+  <div class="toast" id="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ── WhatsApp Floating Button ────────────────────────── -->
+  <a href="https://wa.me/919238514756?text=Hi%2C%20I%20would%20like%20to%20book%20a%20vehicle."
+    id="wa-fab"
+    class="wa-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-fab__tooltip">Chat with us</span>
+  </a>
+
+  <!-- ── Back to Top Button ───────────────────────────────── -->
+  <button
+    id="back-to-top"
+    class="back-to-top"
+    aria-label="Back to top"
+    aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ── Gallery Lightbox ─────────────────────────────────── -->
+  <div id="lightbox-overlay" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer" aria-modal="true">
+    <button id="lightbox-close" class="lightbox__close" aria-label="Close image viewer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button id="lightbox-prev" class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <div class="lightbox__content">
+      <img id="lightbox-img" src="" alt="" class="lightbox__img">
+      <p id="lightbox-caption" class="lightbox__caption"></p>
+    </div>
+    <button id="lightbox-next" class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ── Scripts (deferred, order matters) ──────────────── -->
+  <script src="js/nav.js"    defer></script>
+  <script src="js/reveal.js" defer></script>
+  <script src="js/form.js"   defer></script>
+  <script src="js/utils.js"  defer></script>
+
+</body>
+</html>

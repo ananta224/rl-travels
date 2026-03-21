@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block admin / script paths
+Disallow: /google-apps-script/
+
+Sitemap: https://rltravels.in/sitemap.xml

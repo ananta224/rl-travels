@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found – R L Travels</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      background: var(--clr-ink-900);
+      color: var(--clr-white);
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .e-code {
+      font-family: var(--font-display);
+      font-size: clamp(96px, 20vw, 180px);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--clr-saffron);
+      opacity: 0.18;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+    .e-content {
+      position: relative;
+      z-index: 1;
+      max-width: 480px;
+    }
+    .e-icon {
+      font-size: 64px;
+      margin-bottom: 24px;
+      display: block;
+      animation: bob 3s ease-in-out infinite;
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-10px); }
+    }
+    .e-title {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 6vw, 44px);
+      font-weight: 900;
+      margin-bottom: 16px;
+      color: var(--clr-white);
+    }
+    .e-title em { font-style: italic; color: var(--clr-saffron-300); }
+    .e-body {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 40px;
+    }
+    .e-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-body); font-size: 15px; font-weight: 600;
+      padding: 13px 26px; border-radius: 8px; text-decoration: none;
+      transition: transform 0.15s, background 0.2s;
+      border: 2px solid transparent;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn--primary { background: var(--clr-saffron); color: #fff; border-color: var(--clr-saffron); }
+    .btn--primary:hover { background: var(--clr-saffron-400); }
+    .btn--ghost  { background: transparent; color: #fff; border-color: rgba(255,255,255,0.35); }
+    .btn--ghost:hover  { background: rgba(255,255,255,0.08); }
+    .e-links {
+      margin-top: 40px;
+      display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;
+      font-size: 14px;
+    }
+    .e-links a {
+      color: rgba(255,255,255,0.40);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .e-links a:hover { color: var(--clr-saffron-300); }
+  </style>
+</head>
+<body>
+  <span class="e-code" aria-hidden="true">404</span>
+
+  <div class="e-content">
+    <span class="e-icon" aria-hidden="true">🗺️</span>
+    <h1 class="e-title">Oops! <em>Lost en route?</em></h1>
+    <p class="e-body">
+      The page you're looking for doesn't exist or has been moved.
+      Let us get you back on track — our drivers always know the way.
+    </p>
+    <div class="e-actions">
+      <a href="index.html" class="btn btn--primary">🏠 Back to Home</a>
+      <a href="tel:+919238514756" class="btn btn--ghost">📞 Call Us</a>
+    </div>
+    <nav class="e-links" aria-label="Quick links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="https://wa.me/919238514756" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</body>
+</html>

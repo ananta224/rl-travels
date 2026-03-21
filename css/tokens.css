@@ -1,0 +1,150 @@
+/* ============================================================
+   DESIGN TOKENS  –  R L Travels
+   Single source of truth for all design decisions
+   ============================================================ */
+
+:root {
+  /* ── Brand Palette ─────────────────────────────────────── */
+  --clr-saffron-900: #7A3A00;
+  --clr-saffron-700: #B85500;
+  --clr-saffron-600: #D4620A;
+  --clr-saffron:     #E8670A;   /* primary */
+  --clr-saffron-400: #F07830;
+  --clr-saffron-300: #F4892A;
+  --clr-saffron-100: #FFF0E0;
+  --clr-saffron-50:  #FFF8F1;
+
+  --clr-gold-700: #9A6A00;
+  --clr-gold:     #C9921A;
+  --clr-gold-300: #E0B040;
+
+  --clr-green-700: #1B5C38;
+  --clr-green:     #2E7D52;
+  --clr-green-400: #3A9E6A;
+  --clr-green-100: #E8F5EE;
+
+  /* ── Neutrals ──────────────────────────────────────────── */
+  --clr-ink-950: #0F0A04;
+  --clr-ink-900: #1A1209;
+  --clr-ink-800: #2C1D0A;
+  --clr-ink-700: #3D2C14;
+  --clr-ink-600: #5C4A2A;
+  --clr-ink-500: #7A6645;
+  --clr-ink-400: #A08B6A;
+  --clr-ink-300: #C4AF90;
+  --clr-ink-200: #E0D0B5;
+  --clr-ink-100: #F0E8D5;
+  --clr-ink-50:  #F8F2E4;
+
+  --clr-sand:   #F5EDD8;
+  --clr-cream:  #FDFAF4;
+  --clr-white:  #FFFFFF;
+
+  /* ── Semantic Aliases ──────────────────────────────────── */
+  --clr-bg-base:      var(--clr-cream);
+  --clr-bg-subtle:    var(--clr-sand);
+  --clr-bg-dark:      var(--clr-ink-900);
+  --clr-bg-dark-alt:  var(--clr-ink-800);
+
+  --clr-text-primary:   var(--clr-ink-900);
+  --clr-text-secondary: var(--clr-ink-600);
+  --clr-text-muted:     var(--clr-ink-400);
+  --clr-text-inverse:   var(--clr-white);
+  --clr-text-inverse-muted: rgba(255,255,255,0.55);
+
+  --clr-border:       rgba(92,74,42,0.12);
+  --clr-border-dark:  rgba(255,255,255,0.10);
+
+  --clr-accent:   var(--clr-saffron);
+  --clr-success:  var(--clr-green);
+  --clr-warning:  var(--clr-gold);
+
+  /* ── Typography ────────────────────────────────────────── */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-serif:   'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', 'Segoe UI', sans-serif;
+
+  --fs-xs:   11px;
+  --fs-sm:   13px;
+  --fs-base: 15px;
+  --fs-md:   17px;
+  --fs-lg:   20px;
+  --fs-xl:   24px;
+  --fs-2xl:  30px;
+  --fs-3xl:  38px;
+  --fs-4xl:  52px;
+  --fs-5xl:  68px;
+  --fs-6xl:  88px;
+
+  --fw-light:   300;
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semi:    600;
+  --fw-bold:    700;
+  --fw-black:   900;
+
+  --lh-tight:   1.05;
+  --lh-snug:    1.25;
+  --lh-normal:  1.5;
+  --lh-relaxed: 1.7;
+
+  --ls-tight:  -0.02em;
+  --ls-normal:  0;
+  --ls-wide:    0.04em;
+  --ls-wider:   0.08em;
+  --ls-widest:  0.14em;
+
+  /* ── Spacing Scale ─────────────────────────────────────── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* ── Layout ────────────────────────────────────────────── */
+  --container-max: 1280px;
+  --container-pad: var(--space-20);
+
+  --nav-height: 72px;
+
+  /* ── Radius ────────────────────────────────────────────── */
+  --radius-sm:   6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ───────────────────────────────────────────── */
+  --shadow-xs: 0 1px 3px rgba(26,18,9,0.08);
+  --shadow-sm: 0 4px 16px rgba(26,18,9,0.10);
+  --shadow-md: 0 8px 32px rgba(26,18,9,0.12);
+  --shadow-lg: 0 16px 56px rgba(26,18,9,0.16);
+  --shadow-xl: 0 32px 96px rgba(26,18,9,0.20);
+
+  /* ── Transitions ───────────────────────────────────────── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+  --duration-slower: 700ms;
+
+  /* ── Z-Index Stack ─────────────────────────────────────── */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-dropdown:50;
+  --z-sticky: 100;
+  --z-modal:  200;
+  --z-toast:  300;
+}
